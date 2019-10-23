@@ -46,11 +46,11 @@
     overflow hidden
     width 100%
     height 0
-    padding-bottom 31.25%
+    padding-bottom 26.67%
 
   /*  以上方法是实现长宽比一定比例的最好的方法，
-      直接写 width 100%，height 31.25%无法实现 , 因为它是相对父级元素的比例
-      或者可以写作 width 100%  height 31.25vw , 但是可能存在浏览器兼容问题
+      直接写 width 100%，height 26.67% 无法实现 , 因为它是相对父级元素的比例
+      或者可以写作 width 100%  height 26.67vw , 但是可能存在浏览器兼容问题
   */
 
   .swiper-image

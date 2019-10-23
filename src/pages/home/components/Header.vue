@@ -20,6 +20,7 @@
        @/  内容引用根目录
     */
   @import "~styles/varibles.styl"
+
   .header
     display flex
     line-height .86rem
@@ -49,6 +50,5 @@
     width 1.24rem
     float right
     text-align center
-
 
 </style>
