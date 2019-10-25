@@ -18,7 +18,6 @@
 
     export default {
         name: 'Home',
-
         components: {
             HomeHeader,
             HomeSwiper,
