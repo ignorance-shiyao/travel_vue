@@ -20,26 +20,6 @@
         props:{
              list:Array
         }
-        // data() {
-        //     return {
-        //         recommendList: [{
-        //             id: '0001',
-        //             imageURL: 'http://img1.qunarzz.com/sight/p0/201403/07/a3231208ca4095bef77068c202d95bd2.jpg_200x200_0d7d4e22.jpg',
-        //             title: '香山公园',
-        //             desc: '香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园'
-        //         }, {
-        //             id: '0002',
-        //             imageURL: 'http://img1.qunarzz.com/sight/p0/201403/07/a3231208ca4095bef77068c202d95bd2.jpg_200x200_0d7d4e22.jpg',
-        //             title: '香山公园',
-        //             desc: '香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园'
-        //         }, {
-        //             id: '0003',
-        //             imageURL: 'http://img1.qunarzz.com/sight/p0/201403/07/a3231208ca4095bef77068c202d95bd2.jpg_200x200_0d7d4e22.jpg',
-        //             title: '香山公园',
-        //             desc: '香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园'
-        //         }]
-        //     }
-        // }
     }
 </script>
 

@@ -28,7 +28,6 @@
                 swiperOption: {
                     autoplay: false
                 }
-
             }
         }
         , computed: {
