@@ -2,7 +2,7 @@
   <div>
     <div class="recommend-title">周末去哪儿</div>
     <ul>
-      <li class="item border-bottom" v-for="(item,index) of recommendList " :key="index">
+      <li class="item border-bottom" v-for="(item,index) of list " :key="index">
         <div class="item-img-wrapper">
           <img :src="item.imageURL" class="item-img" Alt="img"/>
         </div>
@@ -18,26 +18,29 @@
 <script>
     export default {
         name: "HomeWeekend",
-        data() {
-            return {
-                recommendList: [{
-                    id: '0001',
-                    imageURL: 'http://img1.qunarzz.com/sight/source/1811/f3/86173f863bef61.jpg_r_640x214_52b003ac.jpg',
-                    title: '京城周末撒欢',
-                    desc: '在帝都过周末，不仅仅是城中游！'
-                }, {
-                    id: '0002',
-                    imageURL: 'http://img1.qunarzz.com/sight/source/1811/f3/86173f863bef61.jpg_r_640x214_52b003ac.jpg',
-                    title: '京城周末撒欢',
-                    desc: '在帝都过周末，不仅仅是城中游！'
-                }, {
-                    id: '0003',
-                    imageURL: 'http://img1.qunarzz.com/sight/source/1811/f3/86173f863bef61.jpg_r_640x214_52b003ac.jpg',
-                    title: '京城周末撒欢',
-                    desc: '在帝都过周末，不仅仅是城中游！'
-                }]
-            }
+        props: {
+            list: Array
         }
+        // data() {
+        //     return {
+        //         recommendList: [{
+        //             id: '0001',
+        //             imageURL: 'http://img1.qunarzz.com/sight/source/1811/f3/86173f863bef61.jpg_r_640x214_52b003ac.jpg',
+        //             title: '京城周末撒欢',
+        //             desc: '在帝都过周末，不仅仅是城中游！'
+        //         }, {
+        //             id: '0002',
+        //             imageURL: 'http://img1.qunarzz.com/sight/source/1811/f3/86173f863bef61.jpg_r_640x214_52b003ac.jpg',
+        //             title: '京城周末撒欢',
+        //             desc: '在帝都过周末，不仅仅是城中游！'
+        //         }, {
+        //             id: '0003',
+        //             imageURL: 'http://img1.qunarzz.com/sight/source/1811/f3/86173f863bef61.jpg_r_640x214_52b003ac.jpg',
+        //             title: '京城周末撒欢',
+        //             desc: '在帝都过周末，不仅仅是城中游！'
+        //         }]
+        //     }
+        // }
     }
 </script>
 
