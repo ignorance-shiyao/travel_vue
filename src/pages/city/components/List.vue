@@ -79,7 +79,6 @@
     export default {
         name: "CityList",
         mounted() {
-            const wrapper = document.querySelector('wrapper');
             this.scroll = new BScroll(this.$refs.wrapper)
         }
     }
