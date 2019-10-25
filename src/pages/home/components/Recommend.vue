@@ -2,7 +2,7 @@
   <div>
     <div class="recommend-title">热销推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="(item,index) of recommendList " :key="index">
+      <li class="item border-bottom" v-for="(item,index) of list " :key="index">
         <img :src="item.imageURL" class="item-img" Alt="img"/>
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
@@ -17,25 +17,8 @@
 <script>
     export default {
         name: "HomeRecommend",
-        data() {
-            return {
-                recommendList: [{
-                    id: '0001',
-                    imageURL: 'http://img1.qunarzz.com/sight/p0/201403/07/a3231208ca4095bef77068c202d95bd2.jpg_200x200_0d7d4e22.jpg',
-                    title: '香山公园',
-                    desc: '香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园'
-                }, {
-                    id: '0002',
-                    imageURL: 'http://img1.qunarzz.com/sight/p0/201403/07/a3231208ca4095bef77068c202d95bd2.jpg_200x200_0d7d4e22.jpg',
-                    title: '香山公园',
-                    desc: '香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园'
-                }, {
-                    id: '0003',
-                    imageURL: 'http://img1.qunarzz.com/sight/p0/201403/07/a3231208ca4095bef77068c202d95bd2.jpg_200x200_0d7d4e22.jpg',
-                    title: '香山公园',
-                    desc: '香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园香山公园'
-                }]
-            }
+        props:{
+             list:Array
         }
     }
 </script>
