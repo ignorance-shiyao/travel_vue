@@ -84,6 +84,4 @@
 
   .swiper-image
     width 100%
-
-
 </style>

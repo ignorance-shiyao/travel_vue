@@ -100,6 +100,7 @@
         , computed: {
             pages() {
                 const pages = [];
+
                 /* ES6中的箭头函数 (item, index) =>  等同于 function (item, index) */
                 this.iconList.forEach(function (item, index) {
                     const page = Math.floor(index / 8);
