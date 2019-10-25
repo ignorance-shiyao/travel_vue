@@ -7,10 +7,14 @@ import fastClick from 'fastclick'
 import 'styles/reset.css'
 import 'styles/border.css'
 import 'styles/iconfont.css'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = false ;
 fastClick.attach(document.body);
+Vue.use(VueAwesomeSwiper);
 /* eslint-disable no-new */
+
 new Vue({
   el: '#app',
   // ES6 中如果键和值相同可以省略一部分内容  如 router: router 可以写作 router
