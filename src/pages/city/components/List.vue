@@ -103,7 +103,7 @@
     bottom: 0
 
     .title
-      line-height: .54rem
+      line-height: .6rem
       background: #eee
       padding-left: .2rem
       color: #666
