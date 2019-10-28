@@ -4,18 +4,24 @@
 
 ### plugins
 
+##### ajax 请求数据
+[axios](https://github.com/axios/axios)
 ```
-  # ajax 请求数据
-  npm install axios --save 
-
-  #  图片轮播插件
-  npm install vue-awesome-swiper --save 
-
-  #  页面滚动插件
-  npm install better-scroll --save  
-
+npm install axios --save 
 ```  
 
+#####  图片轮播插件
+[vue-awesome-swiper](https://github.com/surmon-china/vue-awesome-swiper)  
+``` 
+  npm install vue-awesome-swiper --save 
+``` 
+
+#####  页面滚动插件 
+[better-scroll](https://github.com/ustbhuangyi/better-scroll/)
+``` 
+  npm install better-scroll --save  
+``` 
+ 
 ### Build Setup
 
 ``` bash
