@@ -21,6 +21,12 @@ npm install axios --save
 ``` 
   npm install better-scroll --save  
 ``` 
+
+ #####  数据共享 
+[vuex](https://github.com/vuejs/vuex)
+``` 
+  npm install vuex --save  
+``` 
  
 ### Build Setup
 

@@ -5,7 +5,7 @@
         <div class="title border-topbottom">当前城市</div>
         <div class="button-list">
           <div class="button-wrapper">
-            <div class="button">北京</div>
+            <div class="button">{{this.$store.state.city}}</div>
           </div>
         </div>
       </div>
@@ -16,6 +16,7 @@
             class="button-wrapper"
             v-for="item of hot"
             :key="item.id"
+            @click="handleCityClick(item.name)"
           >
             <div class="button">{{item.name}}</div>
           </div>
@@ -48,14 +49,16 @@
 
     export default {
         name: "CityList",
-        mounted() {
-            let wrapper = document.querySelector('.list');
-            let scroll = new BScroll(wrapper, {})
-        },
         props: {
             hot: Array,
             cities: Object,
             letter: String
+        },
+        methods: {
+            handleCityClick(city) {
+                this.$store.commit('changeCity', city);
+                this.$router.push('/')
+            }
         },
         watch: {
             letter() {
@@ -64,6 +67,11 @@
                     this.scroll.scrollToElement(element)
                 }
             }
+        },
+        mounted() {
+            this.$nextTick(() => {
+                this.scroll = new BScroll(this.$refs.wrapper, {})
+            })
         }
     }
 </script>
