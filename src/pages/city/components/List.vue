@@ -1,6 +1,6 @@
 <template>
   <div class="list" ref="wrapper">
-    <div class="content">
+    <div>
       <div class="area">
         <div class="title border-topbottom">当前城市</div>
         <div class="button-list">
@@ -39,7 +39,16 @@
             letter: String
         },
         mounted() {
-            this.scroll = new BScroll(this.$refs.wrapper)
+            // this.scroll = new BScroll(this.$refs.wrapper)
+            this.$nextTick(() => {
+                if (!this.scroll) {
+                    this.scroll = new BScroll(this.$refs.wrapper, {
+                        click: true
+                    });
+                } else {
+                    this.scroll.refresh();
+                }
+            });
         },
         watch: {
             letter() {
@@ -55,12 +64,15 @@
 <style lang='stylus' scoped>
   @import "~styles/varibles.styl"
   .border-topbottom
-  &:before, &:after
-    border-color #cccccc
+    &:before
+      border-color: #ccc
+
+    &:after
+      border-color: #ccc
 
   .border-bottom
-  &:before
-    border-color #cccccc
+    &:before
+      border-color: #ccc
 
   .list
     overflow: hidden
@@ -71,7 +83,7 @@
     bottom: 0
 
     .title
-      line-height: .6rem
+      line-height: .54rem
       background: #eee
       padding-left: .2rem
       color: #666
