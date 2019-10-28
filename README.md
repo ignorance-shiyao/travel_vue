@@ -2,7 +2,21 @@
 
 > This is a project of travel base on Vue
 
-## Build Setup
+### plugins
+
+```
+  # ajax 请求数据
+  npm install axios --save 
+
+  #  图片轮播插件
+  npm install vue-awesome-swiper --save 
+
+  #  页面滚动插件
+  npm install better-scroll --save  
+
+```  
+
+### Build Setup
 
 ``` bash
 # install dependencies
