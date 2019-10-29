@@ -2,7 +2,9 @@
   <div id="app">
     <!--    <img src="./assets/logo.png">-->
     <!--    router-view 显示的是当前路由地址所对应的内容  -->
-    <router-view/>
+    <keep-alive>
+      <router-view/>
+    </keep-alive>
   </div>
 </template>
 
