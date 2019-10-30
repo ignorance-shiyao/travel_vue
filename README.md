@@ -10,6 +10,12 @@
 npm install axios --save 
 ```  
 
+##### 简化CSS代码书写
+[stylus](https://stylus.bootcss.com/)
+```
+npm install stylus --save 
+```  
+
 #####  图片轮播插件
 [vue-awesome-swiper](https://github.com/surmon-china/vue-awesome-swiper)  
 ``` 
