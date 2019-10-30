@@ -43,6 +43,7 @@
                 }
             }
         },
+        // 全局事件的解绑
         mounted() {
             window.addEventListener('scroll', this.handleScroll)
         },
