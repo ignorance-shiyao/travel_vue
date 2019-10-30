@@ -46,7 +46,7 @@
                 this.letter = letter
             }
         },
-        created() {
+        mounted() {
             this.getCityInfo()
         }
     }
