@@ -49,7 +49,7 @@
     import {mapState, mapMutations} from 'vuex'
 
     export default {
-        name: "CityList",
+        name: 'CityList',
         props: {
             hot: Array,
             cities: Object,
