@@ -87,7 +87,6 @@
 </script>
 
 <style lang='stylus' scoped>
-  @import "~styles/varibles.styl"
   .search
     height: .72rem
     padding: 0 .1rem
