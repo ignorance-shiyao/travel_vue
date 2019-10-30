@@ -1,8 +1,8 @@
-'use strict'
+'use strict';
 // Template version: 1.3.1
 // see http://vuejs-templates.github.io/webpack for documentation.
 
-const path = require('path')
+const path = require('path') ;
 
 module.exports = {
   dev: {
@@ -13,10 +13,13 @@ module.exports = {
     //  webpack-dev-server 提供的一个可以帮助我们把 api 请求转到本地文件夹下
     proxyTable: {
       '/api': {
+        //  本地数据
         target: 'http://localhost:8080',
         pathRewrite: {
           '^/api': '/static/mock'
         }
+        //  服务端数据请求
+        // target: 'http://服务器ip:端口号'
       }
     },
 
@@ -74,4 +77,4 @@ module.exports = {
     // Set to `true` or `false` to always turn it on or off
     bundleAnalyzerReport: process.env.npm_config_report
   }
-}
+} ;

@@ -3,7 +3,7 @@
     <li class="item" v-for="item of letters"
         :key="item"
         :ref="item"
-        @touchstart="handleTouchStart"
+        @touchstart.prevent="handleTouchStart"
         @touchmove="handleTouchMove"
         @touchend="handleTouchEnd"
         @click="handleLetterClick">
@@ -22,7 +22,9 @@
             letters() {
                 const letters = [];
                 for (let i in this.cities) {
-                    letters.push(i)
+                    if (this.cities.hasOwnProperty(i)) {
+                        letters.push(i)
+                    }
                 }
                 return letters;
             }
@@ -35,7 +37,7 @@
             }
         },
         updated() {
-            this.startY = this.$refs['A']  [0].offsetTop
+            this.startY = this.$refs['A'][0].offsetTop
         },
         methods: {
             handleLetterClick(e) {
